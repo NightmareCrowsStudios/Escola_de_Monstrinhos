@@ -12,7 +12,7 @@ public class PlayerMove : MonoBehaviour
     //variaveis para joystick
     private float horizontalMove = 0f;
     public Joystick joystick;
-    public float runSpeedHorizontal = 2;
+    public float runSpeedHorizontal = 2f;
 
     void Start()
     {
@@ -21,21 +21,32 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         FixedUpdate();
-        Jump();
     }
 
     void FixedUpdate()
     {
-        float moveInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        horizontalMove = joystick.Horizontal * runSpeedHorizontal;
+        transform.position += new Vector3(horizontalMove, 0 , 0) * Time.deltaTime * speed;
 
-        if(facingRight == false && moveInput > 0)
+        //float moveInput = Input.GetAxis("Horizontal");
+        //rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+
+        if(facingRight == false && horizontalMove > 0)
         {
             Flip();
-        } else if(facingRight && moveInput < 0)
+        } else if(facingRight && horizontalMove < 0)
         {
             Flip();
         }
+
+        /*if(horizontalMove > 0)
+        {
+            transform.eulerAngles = new Vector3(0f,0f,0f); //olhando para direita
+        }
+        if(horizontalMove < 0)
+        {
+            transform.eulerAngles = new Vector3(0f,180f,0f); //olhando para esquerda
+        }*/
     }
 
     void Flip()
@@ -46,11 +57,12 @@ public class PlayerMove : MonoBehaviour
         transform.localScale = Scaler;
     }
 
-    void Jump()
+    public void Jump()
     {
-        if(Input.GetButtonDown("Jump"))
+        if(rb.velocity.y == 0)
         {
-            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            rb.velocity = Vector2.up * jumpForce;
+            //rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
     }
 }
