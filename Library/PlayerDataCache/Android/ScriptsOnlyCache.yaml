@@ -3,12 +3,11 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - FixedJoystick
     - GameOver
+    - IntroEnd
     - Moeda
     - PlayerMove
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
-    Unity.2D.SpriteShape.Editor.dll:
-    - UnityEditor.U2D.SpriteShapeEditorAnalytics
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
@@ -24,10 +23,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -70,11 +67,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12986}
     - Class: 114
-      Script: {instanceID: 13756}
+      Script: {instanceID: 13456}
     - Class: 114
-      Script: {instanceID: 14374}
+      Script: {instanceID: 13760}
     - Class: 114
-      Script: {instanceID: 19174}
+      Script: {instanceID: 14378}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -90,6 +87,31 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Intro.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 15644}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
       Script: {instanceID: 0}
     Assets/Scenes/Level.unity:
     - Class: 1
@@ -131,15 +153,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12986}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 13364}
     - Class: 114
-      Script: {instanceID: 13756}
+      Script: {instanceID: 13430}
     - Class: 114
-      Script: {instanceID: 13930}
+      Script: {instanceID: 13760}
     - Class: 114
-      Script: {instanceID: 14374}
+      Script: {instanceID: 13934}
     - Class: 114
-      Script: {instanceID: 20824}
+      Script: {instanceID: 14378}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -192,11 +214,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12986}
     - Class: 114
-      Script: {instanceID: 13756}
+      Script: {instanceID: 13456}
     - Class: 114
-      Script: {instanceID: 14374}
+      Script: {instanceID: 13760}
     - Class: 114
-      Script: {instanceID: 19174}
+      Script: {instanceID: 14378}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -576,6 +598,12 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Moeda
+  - hash:
+      serializedVersion: 2
       Hash: 824e8d4cb47ffd88ddf959dbd4526585
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -592,6 +620,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameOver
   - hash:
       serializedVersion: 2
       Hash: 6939772cb3ce775a8e8d99f332534491
@@ -744,19 +778,14 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 8694350828706a110e9dcc54d7b58852
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GameOver
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Moeda
+    className: IntroEnd
   platform: 13
   scenePathNames:
+  - Assets/Scenes/Intro.unity
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Level.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: C:/Users/USUARIO/Desktop/GameMonstrinhos/Game dos Monstrinhos.apk
+  playerPath: C:/Users/USUARIO/Desktop/Escola de Monstrinhos/Escola de Monstrinhos.apk

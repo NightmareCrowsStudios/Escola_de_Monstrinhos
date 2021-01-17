@@ -66,7 +66,7 @@ public class PlayerMove : MonoBehaviour
         }
         if(transform.position.y < -5.30f)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 

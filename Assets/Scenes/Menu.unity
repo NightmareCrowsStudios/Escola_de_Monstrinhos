@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 357812039}
   - component: {fileID: 357812038}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Iniciar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 1135959418}
   - component: {fileID: 1135959417}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Sair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
