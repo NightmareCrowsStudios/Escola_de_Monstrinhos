@@ -218,9 +218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   end: 0
-  timeToEnd: 23.25
+  timeToEnd: 12.5
   time: 0
---- !u!1 &1515472129
+--- !u!1 &1316803476
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,24 +228,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1515472131}
-  - component: {fileID: 1515472130}
+  - component: {fileID: 1316803478}
+  - component: {fileID: 1316803477}
   m_Layer: 0
-  m_Name: Intro Game dos monstrinhos2
+  m_Name: Intro Game dos monstrinhosOficial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!328 &1515472130
+--- !u!328 &1316803477
 VideoPlayer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515472129}
+  m_GameObject: {fileID: 1316803476}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9318a3642d5b723449a43490a2503eb5, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: ecb5036a6ca1b5844b4fcad71a933928, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 802494617}
@@ -271,13 +271,13 @@ VideoPlayer:
   m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
---- !u!4 &1515472131
+--- !u!4 &1316803478
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515472129}
+  m_GameObject: {fileID: 1316803476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
